@@ -1,0 +1,38 @@
+{
+  "name": "s3-syncer",
+  "version": "0.0.1",
+  "description": "A directory watcher / sync tool for S3",
+  "main": "index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "s3-syncer": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RickGroenewegen/s3-syncer.git"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "keychain": "^1.0.0",
+    "node-watch": "^0.4.1",
+    "prompt": "^0.2.14",
+    "relaxed-json": "^1.0.0",
+    "s3": "^4.4.0"
+  },
+  "keywords": [
+    "sublime",
+    "s3",
+    "aws",
+    "sync",
+    "ftp",
+    "watch",
+    "watcher",
+    "synchronize",
+    "synchronise",
+    "sync",
+    "files",
+    "folders"
+  ],
+  "author": "Rick Groenewegen <rick@aanzee.nl> (http://www.rickgroenewegen.nl)",
+  "license": "ISC"
+}
