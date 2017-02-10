@@ -1,6 +1,6 @@
 {
   "name": "s3-syncer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A directory watcher / sync tool for S3",
   "main": "index.js",
   "preferGlobal": "true",
