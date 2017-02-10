@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RickGroenewegen/s3-syncer.git"
+    "url": "git+https://github.com/RickGroenewegen/s3-syncer.git"
   },
   "dependencies": {
     "colors": "^1.1.2",
@@ -34,5 +34,13 @@
     "folders"
   ],
   "author": "Rick Groenewegen <rick@aanzee.nl> (http://www.rickgroenewegen.nl)",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RickGroenewegen/s3-syncer/issues"
+  },
+  "homepage": "https://github.com/RickGroenewegen/s3-syncer#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
