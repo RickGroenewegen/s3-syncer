@@ -15,7 +15,6 @@ var jobs = [];
 var scanInterval = 1000;
 var configLocation = './s3-config.json';
 var ignorePatterns = '';
-var region = '';
 var accessKey = '';
 var secretKey = '';
 var bucket = '';
@@ -98,7 +97,6 @@ if(fs.existsSync(configLocation)) {
   // Try to parse sftp-config.json file
   try{
     var config = RJSON.parse(content);
-    region = config.region;
     accessKey = config.accessKey;
     secretKey = config.secretKey;
     bucket = config.bucket;
@@ -132,10 +130,6 @@ if(fs.existsSync(configLocation)) {
 
   var schema = {
     properties: {
-      region: {
-        description: "Region",
-        required: true
-      },
       accessKey: {
         description: "Access key",
         required: true
@@ -155,13 +149,11 @@ if(fs.existsSync(configLocation)) {
   prompt.get(schema, function (err, result) {
    
     var obj = {
-      region: result.region,
       accessKey: result.accessKey,
       secretKey: result.secretKey,
       bucket: result.bucket
     }
 
-    region = result.region;
     accessKey = result.accessKey;
     secretKey = result.secretKey;
     bucket = result.bucket;
